@@ -1,0 +1,65 @@
+<view style='display:flex; align-items: center;'>    <view class='classify-list'>
+      <navigator url='' hover-class='other-navigator-hover'>
+        <image style='width:30px;height:30px' src='/images/100.png'></image>
+      </navigator>
+    </view>
+<input type='text' placeholder='搜索' style='text-align:center'></input>
+<view class='classify-list'>
+<navigator url='' hover-class='other-navigator-hover'>
+        <image style='width:30px;height:30px'src='/images/101.png'></image>
+      </navigator>
+    </view>
+</view>    
+
+<swiper indicator-dots="true"
+  autoplay="true" interval="{{interval}}" duration="{{duration}}"circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='goods-classify'>
+    <view class='classify-list' wx:for="{{classlist}}" wx:key="{{index}}">
+      <navigator url='{{item.url}}' hover-class='other-navigator-hover'>
+        <image src='{{item.imgsrc}}'></image>
+        <view class='classify-text'>
+          <text>{{item.text}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+<view class='recommend'>
+  <view class='item'>
+    <image class='thumbnail' src='/images/mac.jpg'></image>
+    <view class='info'>
+      <view class='descr'>mac口红</view>
+      <view class='sold'>999</view>
+      <view class='price'>125</view>
+      <image style='width:30px;height:30px' src='/images/c-on.png'></image> 
+    </view>
+  </view>
+  <view>
+   <view class='item'>
+    <image class='thumbnail' src='/images/123.jpg'></image>
+    <view class='info'>
+      <view class='descr'>mac套盒</view>
+      <view class='sold'>888</view>
+      <view class='price'>888</view>
+      <image style='width:30px;height:30px' src='/images/c-on.png'></image> 
+    </view>
+  </view>
+  </view>
+  <view>
+   <view class='item'>
+    <image class='thumbnail' src='/images/mac.jpg'></image>
+    <view class='info'>
+      <view class='descr'>mac口红两支装</view>
+      <view class='sold'>100013</view>
+      <view class='price'>350</view>
+      <image style='width:30px;height:30px' src='/images/bbjj.jpg'></image> 
+    </view>
+  </view>
+  </view>
+</view>
