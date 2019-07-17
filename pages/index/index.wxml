@@ -9,11 +9,10 @@
         <image style='width:30px;height:30px'src='/images/101.png'></image>
       </navigator>
     </view>
-</view>    
-
+</view>
 <swiper indicator-dots="true"
   autoplay="true" interval="{{interval}}" duration="{{duration}}"circular="true">
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}"wx:key="imgUrls">
     <swiper-item>
       <image src="{{item}}" class="slide-image" width="355" height="150"/>
     </swiper-item>

@@ -1,1 +1,36 @@
-菜单02
+<view style='display:flex; align-items: center;'>    <view class='classify-list'>
+      <navigator url='' hover-class='other-navigator-hover'>
+        <image style='width:30px;height:30px' src='/images/100.png'></image>
+      </navigator>
+    </view>
+<input type='text' placeholder='搜索' style='text-align:center'></input>
+<view class='classify-list'>
+<navigator url='' hover-class='other-navigator-hover'>
+        <image style='width:40px;height:40px' src='/images/1011.png'></image>
+      </navigator>
+    </view>
+</view>
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'avtive' : ''}}" wx:key="unique" 
+  bindtap="navbarTap">{{item}}</text>  
+</view>
+<swiper indicator-dots="true"
+  autoplay="true" interval="{{interval}}" duration="{{duration}}"circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='goods-classify'>
+    <view class='classify-list' wx:for="{{classlist}}" wx:key="{{index}}">
+      <navigator url='{{item.url}}' hover-class='other-navigator-hover'>
+        <image src='{{item.imgsrc}}'></image>
+        <view class='classify-text'>
+          <text>{{item.text}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+

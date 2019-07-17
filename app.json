@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/takephoto/index",
     "pages/index/index",
     "pages/menu2/index",
     "pages/menu3/index",
@@ -12,15 +13,14 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#000000",
-    "selectedColor":"#666666",
+    "color": "#000000",
+    "selectedColor": "#666666",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "商城",
-        "iconPath":"images/a-off.png",
-        "selectedIconPath":"images/a-on.png"
-
+        "iconPath": "images/a-off.png",
+        "selectedIconPath": "images/a-on.png"
       },
       {
         "pagePath": "pages/menu2/index",
@@ -41,6 +41,6 @@
         "selectedIconPath": "images/d-on.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
-  
